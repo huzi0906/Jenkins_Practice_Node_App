@@ -33,6 +33,7 @@ pipeline {
          stage('Initialize_Docker'){
             steps{
                 script{
+                    def dockerHome = tool 'docker_jenkins'
                     env.PATH = "/usr/bin/docker"
                 }
             }
