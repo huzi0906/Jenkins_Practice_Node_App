@@ -8,9 +8,7 @@ pipeline {
         
         stage('Checkout') {
             steps {
-                steps {
-                    git 'https://github.com/huzi0906/Jenkins_Practice_Node_App.git'
-                }
+                git 'https://github.com/huzi0906/Jenkins_Practice_Node_App.git'
             }
         }
 
